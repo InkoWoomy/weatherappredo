@@ -4,9 +4,9 @@ import TextInput from "../Components/InputComponent";
 import { IGeoItems } from "../Interfaces/weatherInterface";
 import WeatherData from "../utils/weatherData.json";
 
-export default function MainPage(){
+export default function CityAndTemperature(){
     return (
-        <div className="grid grid-cols-7 gap-4 p-10 justify-center">
+        <div className="grid grid-cols-7 p-10 justify-center gap-4">
             <div className="bg-indigo-900 border-indigo-400 border-4 p-10 col-span-3 rounded-xl text-zinc-50">
                 {/** Input and city */}  
                 <TextInput/>  
@@ -29,19 +29,7 @@ export default function MainPage(){
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-5 bg-indigo-900 border-indigo-400 border-4 p-3 col-span-7 rounded-xl text-zinc-50 ">
-                {/** 5-day forecast */}  
-                <div className=" border-8 rounded-full flex items-center justify-center size-72 justify-self-center">
-                </div>
-                <div className=" border-8 rounded-full flex items-center justify-center size-72 justify-self-center">
-                </div>
-                <div className=" border-8 rounded-full flex items-center justify-center size-72 justify-self-center">
-                </div>
-                <div className=" border-8 rounded-full flex items-center justify-center size-72 justify-self-center">
-                </div>
-                <div className=" border-8 rounded-full flex items-center justify-center size-72 justify-self-center">
-                </div>
-            </div>
+           
         </div>
         
     );
