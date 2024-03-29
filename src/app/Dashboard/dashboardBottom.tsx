@@ -1,8 +1,5 @@
 'use client';
 
-import TextInput from "../Components/InputComponent";
-import { IGeoItems } from "../Interfaces/weatherInterface";
-import WeatherData from "../utils/weatherData.json";
 
 export default function FiveDay(){
     return (

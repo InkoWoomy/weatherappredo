@@ -1,9 +1,6 @@
 'use client';
 
 import TextInput from "../Components/InputComponent";
-import { IGeoItems } from "../Interfaces/weatherInterface";
-import WeatherData from "../utils/weatherData.json";
-
 export default function CityAndTemperature(){
     return (
         <div className="grid grid-cols-7 p-10 justify-center gap-4">
