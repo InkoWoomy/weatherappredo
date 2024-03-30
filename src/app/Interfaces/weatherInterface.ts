@@ -6,3 +6,7 @@ export interface IGeoItems {
     country: string,
     state: string,
  }
+
+export interface ILocationItems{
+    
+}

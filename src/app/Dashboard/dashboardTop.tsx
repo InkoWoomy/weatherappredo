@@ -1,14 +1,21 @@
 'use client';
+import APICall from "../Components/APIComponent";
 
 import TextInput from "../Components/InputComponent";
 export default function CityAndTemperature(){
+
+    console.log (APICall());
     return (
         <div className="grid grid-cols-7 p-10 justify-center gap-4">
             <div className="bg-indigo-900 border-indigo-400 border-4 p-10 col-span-3 rounded-xl text-zinc-50">
                 {/** Input and city */}  
                 <TextInput/>  
+
+                <div className="text-6xl text-center font-mono py-5">
+                    Stockton, California
+                </div>
             </div>
-            <div className="bg-indigo-900 border-indigo-400 border-4  col-span-4 rounded-xl text-zinc-50">
+            <div className="bg-indigo-900 border-indigo-400 border-4 col-span-4 rounded-xl text-zinc-50">
                 {/** Temperature and Weather*/}
 
                 <div className="grid grid-cols-2 gap-10 px-8 py-1 justify-center">
