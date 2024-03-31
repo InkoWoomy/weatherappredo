@@ -4,7 +4,7 @@ import { Button, TextInput } from "flowbite-react";
 import APILocationCall from "../Services/LocationAPIService";
 import { SearchLocation } from "../Components/InputComponent";
 import { ILocationItems } from "../Interfaces/LocationInterface";
-import APIReverseGeoCall from "../Services/RevGeoAPIService";
+
 
 export default function CityAndTemperature() {
   const [location, setLocation] = useState<ILocationItems>();
