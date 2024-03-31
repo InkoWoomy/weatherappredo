@@ -1,13 +1,16 @@
-export default function TextInput() {
+import { Button } from "flowbite-react"
+
+export function SearchLocation() {
     return (
       
-        <div className="rounded-md grid">
+        <div className="rounded-md flex">
           <input
             type="text"
             name="cityName"
-            className="block rounded-md py-1.5 pl-7 pr-20 text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-3xl"
+            className="block rounded-md py-1.5 pl-7 mx-5 text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 md:text-lg lg:text-3xl"
             placeholder="Enter City here"
           />
+          <Button className="block rounded-md py-1.5 px-8 ring-gray-300 placeholder:text-gray-400 hover:ring-indigo-800 md:text-lg lg:text-3xl bg-indigo-500">Search</Button>
         </div>
       
     )
