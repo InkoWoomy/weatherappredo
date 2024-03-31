@@ -13,6 +13,7 @@ export default function CityAndTemperature(){
    
 
     const [location, setLocation] = useState<ILocationItems>();
+
     useEffect(() => {
       const locationData = async () => {
         const fetchedData = await APILocationCall('stockton');
@@ -54,7 +55,7 @@ export default function CityAndTemperature(){
                     {/** Temperature*/}
                     <div className="bg-indigo-400 border-indigo-100 border-8 rounded-full flex items-center justify-center text-zinc-50 md:size-40 lg:size-96 justify-self-center">
                         <div className="md:text-5xl lg:text-9xl font-mono">
-                                {Math.round(location?.list[0]?.main?.temp)}°F
+                                {location && Math.round(location.list[0].main.temp)}°F
                             </div>
                     </div>
                     {/** Weather*/}
