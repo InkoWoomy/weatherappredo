@@ -1,5 +1,5 @@
 import CityAndTemperature from "./Dashboard/dashboardTop";
-import FiveDay from "./Dashboard/dashboardBottom";
+
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
     
     <div>
       <CityAndTemperature/>
-      <FiveDay/>
+      
     </div>
     </>
   );
